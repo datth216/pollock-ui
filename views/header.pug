@@ -1,0 +1,15 @@
+header.header
+    nav.header-nav
+        .container.header-nav-container
+            a.header-logo(href="/")
+                img(src="./images/logo.png" alt="logo")
+                span Pollock
+            ul.menu
+                each val in [{href:"/", title:"Home"}, {href:"#", title:"Services"}, {href:"#", title:"About"}, {href:"#", title:"Pages"}, {href:"#", title:"Blog"}, {href:"#", title:"Contact"}]
+                    li.menu-item
+                        a.menu-link(href= val.href)= val.title
+            .header-right
+                img(src="./images/icon-search.svg" alt="search")                
+                span.icon-bag 
+                    img(src="./images/icon-bag.svg" alt="cart")               
+                button.btn-signup Sign up
