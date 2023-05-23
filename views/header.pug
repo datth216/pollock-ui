@@ -1,4 +1,7 @@
 header.header
+    img.header-shape(src="./images/shape.png" alt="shape")
+    a.header-scroll(href="#")
+        img(src="./images/icon-arrow-down.svg" alt="arrow down")
     nav.header-nav
         .container.header-nav-container
             a.header-logo(href="/")
@@ -12,4 +15,5 @@ header.header
                 img(src="./images/icon-search.svg" alt="search")                
                 span.icon-bag 
                     img(src="./images/icon-bag.svg" alt="cart")               
-                button.btn-signup Sign up
+                button.btn-signup.button Sign up
+    include ./hero
