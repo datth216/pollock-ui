@@ -39,11 +39,16 @@ body {
   line-height: 1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
   color: #7b88a8;
+  background-color: #ffffff;
 }
 
 .wrapper {
@@ -66,6 +71,19 @@ body {
   text-transform: uppercase;
   letter-spacing: -0.3px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: "Outfit", sans-serif;
+}
+
+.heading {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  color: #2d3958;
 }
 
 .header {
@@ -166,10 +184,7 @@ body {
 }
 .hero-heading {
   font-size: 72px;
-  font-weight: 500;
-  font-family: "Outfit", sans-serif;
   line-height: 1.0833333333;
-  color: #2d3958;
   margin-bottom: 40px;
   letter-spacing: -2px;
 }
@@ -217,6 +232,64 @@ body {
   letter-spacing: -0.3px;
   color: #2d3958;
   font-family: "Outfit", sans-serif;
+}
+
+.services {
+  margin-top: 150px 0 120px;
+}
+.services-heading {
+  font-size: 64px;
+  letter-spacing: -2px;
+  text-align: center;
+  line-height: 1.125;
+  max-width: 970px;
+  margin: 0 auto 30px;
+}
+.services-desc {
+  font-size: 18px;
+  line-height: 1.5555555556;
+  letter-spacing: -0.3px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 30px;
+  list-style: none;
+}
+.services-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 35px 60px;
+  border-radius: 20px;
+  border: 1px solid rgba(97, 119, 152, 0.2);
+  transition: all 0.2s linear;
+}
+.services-item-desc {
+  line-height: 1.625;
+}
+.services-item:hover {
+  border-color: transparent;
+  box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
+}
+.services-title {
+  margin: 22px 0 40px;
+  color: #120f1f;
+  font-weight: 400;
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  letter-spacing: -1px;
+  line-height: 1.4545454545;
+}
+.services-list {
+  margin-bottom: 70px;
+}
+.services-link {
+  padding: 16px 32px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
