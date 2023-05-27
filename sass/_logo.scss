@@ -1,0 +1,20 @@
+.logos {
+  margin-bottom: 120px;
+  &-title {
+    font-family: $secondary-font;
+    text-align: center;
+    color: $text-black2;
+    font-size: 36px;
+    line-height: calc(46 / 36);
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin-bottom: 80px;
+  }
+  &-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}
