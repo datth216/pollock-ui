@@ -1,0 +1,24 @@
+section.about
+    .container.about-container
+        h2.about-heading Digital products that people love to use
+        p.text.about-desc Applying behavioral science to customer experience        
+        .about-sections
+            each section in [{image: "./images/img-about1.png", title: "Web3 Experience Design", text: "In the new digital era, users are in control of content and community, and experience design is essential."}, {image: "./images/img-about2.png", title: "We Create World-Class Products", button: "Discover Now", textleft1: "We're a web design agency creating next‑level websites by strategically blending user experience and brand storytelling.", textleft2: "Our full‑stack design and development agency based in San Francisco provides front‑end and back‑end development services working closely with our designers. As a UX UI and app development company, we build native mobile apps for iOS and Android, web applications, apps for wearables, and B2B/enterprise software."}, {image: "./images/img-about3.png", title: "UI/UX Design And Branding Agency", button: "Our Services", textleft1: "We start each new digital product design partnership with an in‑depth discovery phase to immerse ourselves in your business. Our UX/UI designers interview stakeholders, conduct user research, analyze your competition, and consolidate content.", textleft2: "The result is an action plan on executing a holistic brand and user experience."}]
+                .about-section
+                    .about-image
+                        img(src= section.image alt="image about")                    
+                    .about-content
+                        h3.heading.about-section-title= section.title
+                        p.about-text= section.text
+                        if section.text
+                            .about-list
+                                each item in [{icon: "./images/icon-laptop.svg", title: "Design & Development Systems"}, {icon: "./images/icon-chart-2.svg", title: "Digital Growth Strategy"}, {icon: "./images/icon-person.svg", title: "User Journey Mapping"}]
+                                    .about-item
+                                        img(src= item.icon alt="icon")
+                                        .about-item-content
+                                            h4.about-item-title= item.title
+                                            p.about-item-desc Chat, start meetings or join them with a click from within your conversation.
+                        else
+                            p.about-text.about-text-up= section.textleft1
+                            p.about-text.about-text-down= section.textleft2
+                            a.button.about-item-button(href="")= section.button
