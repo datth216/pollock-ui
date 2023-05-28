@@ -439,4 +439,40 @@ body {
   grid-column: 6/-1;
 }
 
+.cta {
+  background-color: #f7f5f1;
+  padding: 106px;
+  position: relative;
+}
+.cta-heading {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.1666666667;
+  text-align: center;
+  color: #2d3958;
+  max-width: 870px;
+  margin: 0 auto 30px;
+}
+.cta-desc {
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  line-height: 1.4545454545;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-bottom: 65px;
+}
+.cta-button {
+  padding: 16px 32px;
+  margin: 0 auto;
+}
+.cta-shape {
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*# sourceMappingURL=main.css.map */
