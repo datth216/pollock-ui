@@ -1,0 +1,35 @@
+footer.footer
+    .container
+        .footer-top
+            .footer-column
+                a.header-logo.footer-logo(href="/")
+                    img(src="./images/logo.png" alt="logo")
+                    span Pollock
+            .footer-column
+                h3.footer-heading Company
+                ul.footer-links
+                    each val in ["About","Work","Careers","Pricing","Blog"]
+                        li.footer-link= val
+            .footer-column
+                h3.footer-heading Services
+                ul.footer-links
+                    each val in ["Branding","Websites","Development","Strategy","Platforms"]
+                        li.footer-link= val
+            .footer-column
+                h3.footer-heading Contact
+                ul.footer-links
+                    each val in ["Help desk","Docs","Open a ticket","Chat","Forum"]
+                        li.footer-link= val
+            .footer-column
+                h3.footer-heading Newsletter
+                p.newsletter-desc Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+                form.newsletter-form(action="")
+                    input(type="text" placeholder="Enter email").newsletter-input
+                    button.button.newsletter-button Submit
+                p.newsletter-warning We hate spam as much as you do. We will never, ever send you such emails. 
+        .footer-bottom 
+            p.footer-text © 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.
+            .footer-social
+                each val in [{img: "./images/icon-fb.svg"},{img: "./images/icon-tw.svg"},{img: "./images/icon-lk.svg"}]
+                    .footer-item
+                        img(src= val.img alt="icon social")
