@@ -141,6 +141,12 @@ body {
 .header .menu-link:hover {
   color: #2d3958;
 }
+.header .menu-toggle {
+  display: none;
+}
+.header .menu-toggle * {
+  pointer-events: none;
+}
 .header-right {
   display: flex;
   align-items: center;
@@ -195,12 +201,19 @@ body {
     align-items: stretch;
     gap: 0 !important;
     transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .menu.is-show {
+    transform: none;
   }
   .menu-link {
     padding: 10px;
   }
   .menu-link:hover {
     color: #2d3958;
+  }
+  .menu-toggle {
+    display: inline-block !important;
   }
   .btn-signup {
     display: none;
