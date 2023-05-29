@@ -1,5 +1,5 @@
 .services {
-  margin: 150px 0 120px;
+  padding: 150px 0 120px;
   &-heading {
     font-size: 64px;
     letter-spacing: -2px;
@@ -53,5 +53,26 @@
   &-link {
     padding: 16px 32px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .services {
+    padding: 80px 0 80px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .services {
+    &-heading {
+      font-size: 42px;
+    }
+
+    &-list {
+      grid-template-columns: 1fr;
+    }
+    &-title {
+      margin: 10px 0 20px;
+    }
   }
 }
