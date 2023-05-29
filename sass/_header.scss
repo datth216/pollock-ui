@@ -32,7 +32,6 @@
     list-style: none;
     display: flex;
     gap: 30px;
-
     &-link {
       display: block;
       text-decoration: none;
@@ -42,9 +41,14 @@
       font-weight: 500;
       font-family: $secondary-font;
       transition: linear 0.2s;
-
       &:hover {
         color: $text-heading;
+      }
+    }
+    &-toggle {
+      display: none;
+      * {
+        pointer-events: none;
       }
     }
   }
@@ -106,11 +110,18 @@
     align-items: stretch;
     gap: 0 !important;
     transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    &.is-show {
+      transform: none;
+    }
     &-link {
       padding: 10px;
       &:hover {
         color: $text-heading;
       }
+    }
+    &-toggle {
+      display: inline-block !important;
     }
   }
 
