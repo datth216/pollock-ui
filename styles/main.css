@@ -307,6 +307,11 @@ body {
     height: 45px;
   }
 }
+@media screen and (max-width: 479.98px) {
+  .hero-started {
+    padding: 10px 20px;
+  }
+}
 .services {
   padding: 150px 0 120px;
 }
@@ -634,6 +639,14 @@ body {
   }
   .cta-desc {
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .cta-heading {
+    font-size: 25px;
+  }
+  .cta-button {
+    padding: 10px 20px;
   }
 }
 .footer {
