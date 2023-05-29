@@ -33,3 +33,15 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  .cta {
+    padding: 80px;
+    &-heading {
+      font-size: 40px;
+    }
+    &-desc {
+      margin-bottom: 30px;
+    }
+  }
+}

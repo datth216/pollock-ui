@@ -68,3 +68,28 @@
     font-family: $secondary-font;
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  .hero {
+    margin-top: 40px;
+    &-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+    &-heading {
+      font-size: 50px;
+    }
+    &-desc {
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
+    &-text {
+      font-size: 13px;
+    }
+    &-play-icon {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}

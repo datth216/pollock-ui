@@ -18,3 +18,17 @@
     gap: 10px;
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  .logos {
+    margin-bottom: 80px;
+    &-title {
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+    &-list {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

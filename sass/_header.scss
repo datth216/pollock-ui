@@ -89,3 +89,32 @@
     border-radius: 100rem;
   }
 }
+
+@media screen and (max-width: 1023.98px) {
+  .header {
+    padding-bottom: 80px;
+  }
+  .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 20;
+    background-color: $text-gray;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0 !important;
+    transform: translateX(100%);
+    &-link {
+      padding: 10px;
+      &:hover {
+        color: $text-heading;
+      }
+    }
+  }
+
+  .btn-signup {
+    display: none;
+  }
+}

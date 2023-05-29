@@ -96,3 +96,48 @@
     color: $text-gray;
   }
 }
+
+@media screen and (max-width: 1023.98px) {
+  .footer {
+    &-top {
+      gap: 10px;
+      padding: 80px 0;
+    }
+    &-column:last-child {
+      flex-basis: 0;
+      max-width: 300px;
+    }
+  }
+
+  .newsletter {
+    &-button {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer {
+    &-logo {
+      justify-content: center;
+    }
+    &-heading {
+      margin-bottom: 10px;
+    }
+    &-top {
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+    }
+    &-column:last-child {
+      max-width: 100%;
+    }
+    &-bottom {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-text {
+      text-align: center;
+    }
+  }
+}
